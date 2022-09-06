@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Codifique e decodifique seu Texto</title> 
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@100;400;500&display=swap" rel="stylesheet"//>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="img/logo.png" alt="Logo da Alura com a inicial da letra A">
+        </header>
+                
+        <main class="main">
+            <section>
+                    <textarea class="input-texto"cols="40" rows="6" placeholder="Digite seu texto aqui:"></textarea> 
+            
+
+                <div>                    
+                    <h1 class="informacao"> Apenas letras minúsculas e sem acento!</h1>
+                </div>
+
+                <div class="botoes">
+
+                    <button class="criptografar" onclick="btnEncriptar()">Criptografar</button>
+
+                    <button class="descriptografar"  onclick="btnDesencriptar()">Descriptografar</button>
+                </div>
+            </section>
+            <section> 
+                <textarea id="mensagem" cols="18" rows="8"></textarea>
+                <div  >
+                    <button class="copy" onclick="copiarTexto()">Copiar</button>
+                </div>
+            </section>
+        </main>
+        <script src="javascript.js"></script>
+        
+        <footer>
+            <p class="copyright">&copy;Produzido por Alura and Oracle, Projeto: ONE-Next Education
+             <P> Desenvolvido por Ellielton Gama - 2022 </p>
+        </footer>
+    </body>
+</html>
